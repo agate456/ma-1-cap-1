@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 1 - O Melhor Engenheiro Do Mundo</title>
+    <style>
+        body { text-align: center; font-family: Arial, sans-serif; background: #1e1b29; color: white; }
+        img { width: 90%; max-width: 600px; margin-bottom: 10px; }
+        .nav { margin-top: 20px; }
+        .nav a { background: #6a0dad; padding: 10px; color: white; text-decoration: none; border-radius: 5px; margin: 5px; }
+        .nav a:hover { background: #9b30ff; }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1 - O Melhor Engenheiro Do Mundo</h1>
+    
+    <!-- Imagens das páginas -->
+    <script>
+        for (let i = 1; i <= 26; i++) {
+            let img = document.createElement("img");
+            let num = i.toString().padStart(3, '0'); // Garante formato 001, 002, etc.
+            img.src = `https://raw.githubusercontent.com/agate456/ma-1-cap-1/main/${num}.jpg`;
+            img.alt = `Página ${i}`;
+            document.body.appendChild(img);
+        }
+    </script>
+    
+    <!-- Navegação -->
+    <div class="nav">
+        <a href="https://agate456.github.io/agate-ma-1/">Voltar</a>
+        <a href="https://agate456.github.io/ma-2-cap-2/">Próximo Capítulo</a>
+    </div>
+</body>
+</html>
